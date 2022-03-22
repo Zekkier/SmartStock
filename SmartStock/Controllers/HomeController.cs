@@ -29,9 +29,38 @@ namespace SmartStock.Controllers
 
         public ActionResult HomePage()
         {
-            ViewBag.Message = "Login";
+            ViewBag.Message = "HomePage";
 
             return View();
         }
+
+        public ActionResult SignUp()
+        {
+            ViewBag.Message = "Sign Up";
+
+            return View();
+        }
+
+        public ActionResult InitializeInventory()
+        {
+            ViewBag.Message = "Initialize Inventory";
+
+            return View();
+        }
+
+        public ActionResult InitializeEmployees()
+        {
+            ViewBag.Message = "Initialize Employees";
+
+            return View();
+        }
+
+        public ActionResult InitializeSuppliers()
+        {
+            ViewBag.Message = "Initialize Suppliers";
+
+            return View();
+        }
+
     }
 }

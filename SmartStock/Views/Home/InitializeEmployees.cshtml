@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "InitializeEmployees";
+}
+@model SmartStock.Models.User
+
+<h1>Initialize Employees</h1>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.First_Name)
+        @Html.TextBoxFor(Model => Model.First_Name)
+    </div>
+</div>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.Last_Name)
+        @Html.TextBoxFor(Model => Model.Last_Name)
+    </div>
+</div>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.Role_ID)
+        @Html.TextBoxFor(Model => Model.Role_ID)
+    </div>
+</div>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.Phone_Number)
+        @Html.TextBoxFor(Model => Model.Phone_Number)
+    </div>
+</div>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.Address_1)
+        @Html.TextBoxFor(Model => Model.Address_1)
+    </div>
+</div>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.Zip)
+        @Html.TextBoxFor(Model => Model.Zip)
+    </div>
+</div>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.User_Name)
+        @Html.TextBoxFor(Model => Model.User_Name)
+    </div>
+</div>
+
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.Password)
+        @Html.TextBoxFor(Model => Model.Password)
+    </div>
+</div>
+
+<!--Confirm Password-->
+<div class="item">
+    <div>
+        @Html.LabelFor(Model => Model.Password)
+        @Html.TextBoxFor(Model => Model.Password)
+    </div>
+</div>
+
+<div class="item">
+    <table>
+        <tr>
+            <th>Role</th>
+            <th>Name</th>
+            <th>Contact Info</th>
+            <th>Address</th>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+        <tr>
+            <td>Sample</td>
+            <td>Replace Me</td>
+            <td> 55555555<br />WithActualLogic@gmail.com</td>
+            <td>545 something st.</td>
+            <td>user</td>
+            <td>qwert12</td>
+        </tr>
+    </table>
+</div>
+
+
+<form action="InitializeSuppliers">
+    <input type="submit" value="Complete" />
+</form>
+
+<form action="InitializeInventory">
+    <input type="submit" value="Previous" />
+</form>
